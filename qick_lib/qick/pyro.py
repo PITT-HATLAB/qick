@@ -62,6 +62,7 @@ def start_server(ns_host, ns_port=8888, proxy_name='myqick', **kwargs):
 
     # if you want to use a different firmware image or set some initialization options, you would do that here
     soc = QickSoc(**kwargs)
+    print(soc)
     print("initialized QICK")
 
     # register the QickSoc in the daemon (so the daemon exposes the QickSoc over Pyro4)
